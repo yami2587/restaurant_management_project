@@ -21,4 +21,4 @@ def menu_view(request):
         }
                 
     ]
-    return Response(menu) 
+    return Response(menu) #its same code and now there no option , like where i like the code in which of its tree path ??
