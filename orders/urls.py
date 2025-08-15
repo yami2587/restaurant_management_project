@@ -1,25 +1,34 @@
-<!DOCTYPE html>
+<!DOCKTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Restaurent Menu</title>
-</head>
-<body>
- <h1> Welecome to our Restaurent!</h1>
- <div id="menu"></div>
- <script>
-  fetch("/api/menu/")
-  .then(res => res.json())
-  .then(data =>{
-    document.getElementById('menu').innerHtml=data.map(
-        item => '<div><b>${item.name}</b>: ${item.price} <br>${item.description}<hr></div>').join('');
+ <meta charset="UTF-8">
+ <title>404 Not Found</title>
+ <style>
+    body{
+        font-family: Arial,sans-serif;
+        text-align: center;
+        padding: 50px;
+    }
+    h1 {
+        font-size: 40px;
+        color: red;
 
-    )
-  })
-  .catch(() => {
-    document.getElementById("menu").innerHtml = "Couldn't load menu";
-  });
-  </script>
-  </body>
-  </html>
-  
+    }
+    p{
+        font-size: 18px
+    }
+    a{
+        color:blue;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    </style>
+    </head>
+    <body>
+        <h1> 404 </h1>
+        <p> Oops! the page you're looking for does not exist. </p>
+        <p><a href="/" >Go back to Home</a></p>
+    </body>
+    </html>
