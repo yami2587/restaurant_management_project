@@ -1,10 +1,12 @@
 <!DOCKTYPE html>
 <html><head> 
-    <title>{{restaurant_name}}</title>
+    <title> Contact Us {{restaurant_name}} </title>
     </head>
 <body>
-    <h1>Welcome to {{ restaurant_name }} </h1>
-    <p> We are happy to serve you delicious meals. </p>
-    <p> <strong> Phone :</strong> {{restaurant_phone}} </p>
+    <div class="contact-box">
+     <h1> Contact Us </h1>
+     <p> Email: support@demo.com </p>
+     <p> Phone: +91 000000000</p>
+     <p> Address: 123 Food street , jingu bingu talllalal</p>
  </body>
 </html>
