@@ -1,6 +1,10 @@
 <!DOCKTYPE html>
 <html><head> 
-    <title> Contact Us {{restaurant_name}} </title>
+    <title> {{restaurant_name}} </title>
+    <style> 
+     body {font-family: Arial, sans-serif; text-align: center; color:black;}
+     h1{color: red; margin-top: 50px}
+     p {font-size: 18px;margin:10px 0;}
     </head>
 <body>
     <div class="contact-box">
