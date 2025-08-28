@@ -18,5 +18,9 @@
      <p> Email: support@demo.com </p>
      <p> Phone: +91 000000000</p>
      <p> Address: 123 Food street , jingu bingu talllalal</p>
+
+     <footer style="text-align:center; padding:15px; margin-top: 30px;">
+      <p>&copy; {{current_year}} ((restaurant_name)). All rights reserved.</p>
+      </footer>
  </body>
 </html>
