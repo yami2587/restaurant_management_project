@@ -1,6 +1,6 @@
 <!DOCKTYPE html>
 <html><head> 
-    <title> {{restaurant_name}} </title>
+    <title> {{restaurant_name}} Reservations </title>
     <style> 
      body {
         font-family: Arial, sans-serif; 
@@ -23,6 +23,8 @@
     </head>
 <body>
     <div class="contact-box">
+    <h1>Reservations</h1>
+    <p> Reservation System comming soon!<p>
      <img src= "{% static 'image/logo.png' % }" alt= "Logo" class = "logo">
      <p> we welcome to serve you our delicacy</p>
      <h1> Contact Us </h1>
