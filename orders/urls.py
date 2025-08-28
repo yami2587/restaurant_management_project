@@ -2,9 +2,19 @@
 <html><head> 
     <title> {{restaurant_name}} </title>
     <style> 
-     body {font-family: Arial, sans-serif; text-align: center; color:black;}
-     h1{color: red; margin-top: 50px}
-     p {font-size: 18px;margin:10px 0;}
+     body {
+        font-family: Arial, sans-serif; 
+        text-align: center; 
+            color:black;
+            }
+     h1{
+        color: red; 
+        margin-top: 50px
+        }
+     p {
+        font-size: 18px;
+        margin:10px 0;  
+        }
      img.logo{
         width: 200px;
         margin: 20px auto;
@@ -14,6 +24,7 @@
 <body>
     <div class="contact-box">
      <img src= "{% static 'image/logo.png' % }" alt= "Logo" class = "logo">
+     <p> we welcome to serve you our delicacy</p>
      <h1> Contact Us </h1>
      <p> Email: support@demo.com </p>
      <p> Phone: +91 000000000</p>
