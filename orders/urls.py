@@ -1,39 +1,10 @@
-<!DOCKTYPE html>
-<html><head> 
-    <title> {{restaurant_name}} Reservations </title>
-    <style> 
-     body {
-        font-family: Arial, sans-serif; 
-        text-align: center; 
-            color:black;
-            }
-     h1{
-        color: red; 
-        margin-top: 50px
-        }
-     p {
-        font-size: 18px;
-        margin:10px 0;  
-        }
-     img.logo{
-        width: 200px;
-        margin: 20px auto;
-        display: block;
-     }
-    </head>
-<body>
-    <div class="contact-box">
-    <h1>Reservations</h1>
-    <p> Reservation System comming soon!<p>
-     <img src= "{% static 'image/logo.png' % }" alt= "Logo" class = "logo">
-     <p> we welcome to serve you our delicacy</p>
-     <h1> Contact Us </h1>
-     <p> Email: support@demo.com </p>
-     <p> Phone: +91 000000000</p>
-     <p> Address: 123 Food street , jingu bingu talllalal</p>
+from django.shortcuts import render
 
-     <footer style="text-align:center; padding:15px; margin-top: 30px;">
-      <p>&copy; {{current_year}} ((restaurant_name)). All rights reserved.</p>
-      </footer>
- </body>
-</html>
+def menu_list(request):
+    menu_items = [
+        {"name": "Pizza","price":"250"},
+        {"name": "pasta","price":"450"},
+        {"name": "biryani","price":"650"},
+        {"name": "Coffe","price":"150"},
+    ]
+    return render(request , "menu_list.html" , {"menu_item": menu_items})
