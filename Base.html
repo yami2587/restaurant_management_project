@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Restaurant</title>
+    <style>
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page content -->
+    {% block content %}{% endblock %}
+
+    <!-- Footer -->
+    <footer>
+        <p>© {{ year }} My Restaurant</p>
+        <p>Opening Hours: Mon-Fri: 11am-9pm | Sat-Sun: 10am-10pm</p>
+    </footer>
+</body>
+</html>
