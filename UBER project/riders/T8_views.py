@@ -33,7 +33,6 @@ def driver_ride_history(request):
         status__in=['COMPLETED', 'CANCELLED']
     ).order_by('-requested_at')
 
-    # Apply pagination
     paginator = PageNumberPagination()
     paginated_rides = paginator.paginate_queryset(rides, request)
     serializer = RideHistorySerializer(paginated_rides, many=True)
